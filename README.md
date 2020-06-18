@@ -1,4 +1,4 @@
-# ZSMG_DEBUG
+# ZSMG_DEBUG (ABAP 7.4+)
 ### Utilities
 
 - ZSMG_DBG_ENH_SEARCH - ABAP Debugger script to search enhancements
