@@ -61,23 +61,23 @@ CLASS lcl_debugger_script IMPLEMENTATION.
     cl_ci_query_attributes=>generic(
       EXPORTING
         p_name       = CONV #( sy-repid )
-        p_title      = 'Параметры скрипта'
+        p_title      = 'Script options'
         p_attributes = VALUE #(
 
                                 ( kind  = 'G'
-                                  text  = 'Параметры запуска'
+                                  text  = 'Script options'
                                   ref   = REF #( sy-subrc ) )
 
                                 ( ref   = REF #( ms_script_params-trace )
                                   kind  = 'R'
-                                  text  = 'Создать файл трассировки' )
+                                  text  = 'Create trace file' )
 
                                 ( ref   = REF #( ms_script_params-debug )
                                   kind  = 'R'
-                                  text  = 'Прерывание в отладчике' )
+                                  text  = 'Stop with debugger' )
 
                                 ( kind  = 'G'
-                                  text  = 'Типы расширений'
+                                  text  = 'Enhancements types'
                                   ref   = REF #( sy-subrc ) )
 
                                 ( ref   = REF #( ms_script_params-customer_exits )
